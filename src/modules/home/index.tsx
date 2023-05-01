@@ -15,7 +15,7 @@ const HomePage = () => {
     useEffect(()=>{
         console.log('hola');
         dispatch(getUserService({id:93}));
-    },[]);
+    },[dispatch]);
     
 
     return (
