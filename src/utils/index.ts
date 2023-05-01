@@ -1,0 +1,1 @@
+export { default as SwalFireError } from './SwalFireError';

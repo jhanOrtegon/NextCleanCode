@@ -1,13 +1,21 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { LayoutHome } from '@/components/layouts/LayoutHome';
+// import { Loading } from '@/components/ui';
+// import { useGetStore } from '@/hooks';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+    // const { ui } = useGetStore();
+
+    return (
+        <Html lang="es">
+            <Head />
+            <body>
+                <LayoutHome>
+                    <Main />
+                    {/* <Loading isLoading={ui.isLoading} /> */}
+                    <NextScript />
+                </LayoutHome>
+            </body>
+        </Html>
+    );
 }
